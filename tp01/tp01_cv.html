@@ -12,13 +12,10 @@
             <h1> Thomas Girod </h1>
             <h1> CV </h1></div>
         <hr>
+    </header>
+    <nav>
         <section class="index">
             <h1>Tables des matières :</h1>
-        </section>
-    </header>
-    <main>
-        <!-- Table des matières -->
-        <div id="matiere">
             <ul>
                 <li><a href="#1">Etat civil</a></li>
                 <li><a href="#2">Formations</a>
@@ -30,7 +27,10 @@
                 <li><a href="#3">Entreprises</a></li>
                 <li><a href="#4">Compétences</a></li>
             </ul>
-        </div>
+        </section>
+    </nav>
+    <main>
+        <!-- Table des matières -->
 
         <!-- Etat civil -->
         <section class="presentation">
@@ -79,47 +79,76 @@
         <!-- Entreprises -->
         <section class="presentation">
             <h2 id="3">Entreprises</h2>
-            <ul>
+            <ol>
                 <li>
-                    <a href="https://www.alstom.com/fr">Alstom</a> :
-                    <a href="https://www.alstom.com/fr">
-                        <img src="images/alstom_logo.png" alt="logo d'Alstom" height="50">
-                    </a>
-                    <a href="https://www.google.com/maps/dir/?api=1&origin=91 avenues des Lombards Troyes &destination=Alstom Saint Ouen">
-                        <img src="images/map_logo.png" alt="une image de carte" height="50">
-                    </a>
+                    <div class="flexbox">
+                        <div class="one"><a href="https://www.alstom.com/fr">Alstom</a> :</div>
+                        <div class="two"><a href="https://www.alstom.com/fr">
+                            <img src="images/alstom_logo.png" alt="logo d'Alstom" height="50">
+                        </a></div>
+                        <div class="three">
+                            <a
+                                    href="https://www.google.com/maps/dir/?api=1&origin=91 avenues des Lombards Troyes &destination=Alstom Saint Ouen"
+                                    target="_blank">
+                                <img src="images/map_logo.png" alt="une image de carte" height="50">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="flexbox">
+                        <div class="one"><a href="https://www.axa.fr/"> AXA</a> :</div>
+                        <div class="two"><a href="https://www.axa.fr/">
+                            <img src="images/axa_logo.png" alt="logo d'AXA" height="100">
+                        </a></div>
+                        <div class="three">
+                            <a href="https://www.google.com/maps/dir/?api=1&origin=91 avenues des Lombards Troyes &destination=Axa siège social"
+                               target="_blank">
+                                <img src="images/map_logo.png" alt="une image de carte" width="50">
+                            </a>
+                        </div>
+                        <div class="four">
+                            <iframe width="280"
+                                    height="157"
+                                    src="https://www.youtube.com/embed/SYNDNsARcqQ" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="https://www.axa.fr/"> AXA</a> :
-                    <a href="https://www.axa.fr/">
-                        <img src="images/axa_logo.png" alt="logo d'AXA" height="50">
-                    </a>
-                    <iframe width="560"
-                            height="315"
-                            src="https://www.youtube.com/embed/SYNDNsARcqQ" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                    <div class="flexbox">
+                        <div class="one"><a href="https://www.danone.fr">Danone</a> :</div>
+                        <div class="two"><a href="https://www.danone.fr">
+                            <img src="images/danone_logo.jpg" alt="logo de Danone" width="100">
+                        </a></div>
+                        <div class="three">
+                            <a href="https://www.google.com/maps/dir/?api=1&origin=91 avenues des Lombards Troyes &destination=Danone siège social"
+                               target="_blank">
+                                <img src="images/map_logo.png" alt="une image de carte" height="50">
+                            </a>
+                        </div>
+                    </div>
                 </li>
-                <li>
-                    <a href="https://www.danone.fr">Danone</a> :
-                    <a href="https://www.danone.fr">
-                        <img src="images/danone_logo.jpg" alt="logo de Danone" height="50">
-                    </a>
-                </li>
-            </ul>
-            <img src="images/logo_ut.png" alt="logo de Danone" width="600" height="406" usemap="#ut_logos">
-            <map name="ut_logos">
-                <area shape="rect" coords="0, 0, 200, 260" href="https://www.utbm.fr" alt="lien vers l'UTBM">
-                <area shape="rect" coords="200, 0, 400, 260" href="https://www.utc.fr" alt="lien vers l'UTC">
-                <area shape="rect" coords="600, 0, 400, 260" href="https://www.utt.fr" alt="lien vers l'UTT">
+            </ol>
+            <img src="images/logo_ut.png" alt="logo des trois UT" title="Et pourquoi on est là ?"
+                 usemap="#ut_logos"
+                 class="centred-map">
+            <map name="ut_logos" >
+                <area shape="rect" coords="0, 0, 200, 150" href="https://www.utbm.fr" alt="lien vers l'UTBM">
+                <area shape="rect" coords="200, 0, 400, 150" href="https://www.utc.fr" alt="lien vers l'UTC">
+                <area shape="rect" coords="600, 0, 400, 150" href="https://www.utt.fr" alt="lien vers l'UTT">
             </map>
         </section>
         <hr>
 
         <!-- Tableau des compétences -->
         <h2 id="4">Compétences</h2>
-        <table>
-            <thead>
+        <div class="competence-table">
+            <table>
+                <thead>
                 <tr>
                     <td>Compétences</td>
                     <td>Débutant</td>
@@ -127,60 +156,59 @@
                     <td>Confirmé</td>
                     <td>Expert</td>
                 </tr>
-            </thead>
-            <tr>
-                <td class="language-name">JavaScript</td>
-                <td class="answer-box">x</td>
-                <td class="answer-box"></td>
-                <td class="answer-box"></td>
-                <td class="answer-box"></td>
-            </tr>
-            <tr>
-                <td class="language-name">HTML</td>
-                <td class="answer-box"></td>
-                <td class="answer-box">x</td>
-                <td class="answer-box"></td>
-                <td class="answer-box"></td>
-            </tr>
-            <tr>
-                <td class="language-name">CSS</td>
-                <td class="answer-box"></td>
-                <td class="answer-box">x</td>
-                <td class="answer-box"></td>
-                <td class="answer-box"></td>
-            </tr>
-            <tr>
-                <td class="language-name">PHP</td>
-                <td class="answer-box">x</td>
-                <td class="answer-box"></td>
-                <td class="answer-box"></td>
-                <td class="answer-box"></td>
-            </tr>
-            <tr>
-                <td class="language-name">Python</td>
-                <td class="answer-box"></td>
-                <td class="answer-box"></td>
-                <td class="answer-box">x</td>
-                <td class="answer-box"></td>
-            </tr>
-            <tr>
-                <td class="language-name">C</td>
-                <td class="answer-box"></td>
-                <td class="answer-box"></td>
-                <td class="answer-box">x</td>
-                <td class="answer-box"></td>
-            </tr>
-            <tr>
-                <td class="language-name">C++</td>
-                <td class="answer-box"></td>
-                <td class="answer-box"></td>
-                <td class="answer-box">x</td>
-                <td class="answer-box"></td>
-            </tr>
-
-
-        </table>
-        <hr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="language-name">JavaScript</td>
+                        <td class="answer-box answered"></td>
+                        <td class="answer-box"></td>
+                        <td class="answer-box"></td>
+                        <td class="answer-box"></td>
+                    </tr>
+                    <tr>
+                        <td class="language-name">HTML</td>
+                        <td class="answer-box"></td>
+                        <td class="answer-box answered" rowspan="2"></td>
+                        <td class="answer-box"></td>
+                        <td class="answer-box"></td>
+                    </tr>
+                    <tr>
+                        <td class="language-name">CSS</td>
+                        <td class="answer-box"></td>
+                        <td class="answer-box"></td>
+                        <td class="answer-box"></td>
+                    </tr>
+                    <tr>
+                        <td class="language-name">PHP</td>
+                        <td class="answer-box answered"></td>
+                        <td class="answer-box"></td>
+                        <td class="answer-box"></td>
+                        <td class="answer-box"></td>
+                    </tr>
+                    <tr>
+                        <td class="language-name">Python</td>
+                        <td class="answer-box"></td>
+                        <td class="answer-box"></td>
+                        <td class="answer-box answered" rowspan="2"></td>
+                        <td class="answer-box"></td>
+                    </tr>
+                    <tr>
+                        <td class="language-name">C</td>
+                        <td class="answer-box"></td>
+                        <td class="answer-box"></td>
+                        <td class="answer-box"></td>
+                    </tr>
+                    <tr>
+                        <td class="language-name">C++</td>
+                        <td class="answer-box answered"></td>
+                        <td class="answer-box"></td>
+                        <td class="answer-box"></td>
+                        <td class="answer-box"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+    </div>
     </main>
 </body>
 </html>

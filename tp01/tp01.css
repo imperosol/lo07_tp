@@ -4,15 +4,20 @@
     font-family: Arial, "Times New Roman", serif;
 }
 
+main {
+    width: 90%;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow:  5px 5px 5px;
+}
+
 h1 {
     color: navy;
     alignment: center;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-h3 {
-    color: sandybrown;
 }
 
 h2 {
@@ -48,7 +53,9 @@ li {
     margin: auto;
     width: 80%;
     text-align: center;
-    background-color: aqua;
+    background-color: lightblue;
+    border-radius: 20px;
+    opacity: 0.8;
 }
 
 
@@ -65,7 +72,7 @@ ol li {
     font-weight: bold;
 }
 
-#matiere {
+.index {
     background-color: salmon;
     display: none;
 }
@@ -84,3 +91,59 @@ table td {
 
 table td .answer-box {
 }
+
+.flexbox {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.one {
+    width: 10%;
+    align-self: center;
+}
+
+.two {
+    width: 40%;
+    text-align: center;
+    align-self: center;
+
+}
+
+.three {
+    width: 10%;
+    align-self: center;
+}
+
+.four {
+    flex: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    align-self: center;
+    width: 40%;
+}
+
+.centred-map {
+    background-size: cover;
+    display: block;
+    margin: auto;
+    width: 600px;
+}
+
+.competence-table table{
+    margin: auto;
+    text-align: center;
+}
+
+.competence-table table thead, .language-name {
+    font-weight: bold;
+}
+
+.competence-table table .answered {
+    background-color: lightgreen;
+}
+
+.competence-table table .answer-box:not(.answered)  {
+     background-color: lightcoral;
+
+ }
