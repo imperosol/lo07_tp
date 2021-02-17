@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="tp_01_lo07">
+    <link rel="stylesheet" href="tp01.css" type="text/css">
+    <title>Mon CV</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1> Thomas Girod </h1>
+            <h1> CV </h1></div>
+        <hr>
+        <section class="index">
+            <h1>Tables des matières :</h1>
+        </section>
+    </header>
+    <main>
+        <!-- Table des matières -->
+        <div id="matiere">
+            <ul>
+                <li><a href="#1">Etat civil</a></li>
+                <li><a href="#2">Formations</a>
+                    <ul>
+                        <li><a href="#2.1">Parcours Universitaire</a></li>
+                        <li><a href="#2.2">Modules UTT</a></li>
+                    </ul>
+                </li>
+                <li><a href="#3">Entreprises</a></li>
+                <li><a href="#4">Compétences</a></li>
+            </ul>
+        </div>
+
+        <!-- Etat civil -->
+        <section class="presentation">
+            <h2 id="1">Etat civil</h2>
+            <ul>
+                <li id="nom"><span class="gras">nom</span> : Girod</li>
+                <li><span class="gras">prénom</span> : Thomas</li>
+                <li><span class="gras">date</span> de naissance : 3 octobre 2000</li>
+                <li><span class="gras">adresse</span> : <a
+                        href="https://www.google.fr/maps/place/91+Avenue+des+Lombards,+10000+Troyes/@48.2687023,4.0827947,17z/data=!3m1!4b1!4m5!3m4!1s0x47ee99130c90fadb:0xea4cd982456aef5d!8m2!3d48.2686987!4d4.084978"
+                        target="_blank">91 avenue des Lombards, 10000 Troyes</a></li>
+                <li><span class="gras">téléphone</span> : 06 06 06 06 06</li>
+                <li><span class="gras">Réseaux</span> :
+                    <ul>
+                        <li><a href="https://github.com/imperosol">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/thomas-girod-054874199/">LinkedIn</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="mailto:thomas.girod@utt.fr">Me contacter</a>
+        </section>
+        <hr>
+
+        <!-- Formations -->
+        <section class="presentation">
+            <h2 id="2">Formations</h2>
+            <h3 id="2.1">Parcours universitaire</h3>
+            <ul>
+                <li>2018 : Baccalauréat S, mention Très Bien</li>
+                <li>2018-2019 : Classe prépa PCSI, lycée d'Arsonval, Saint-Maur-des-Fossés</li>
+                <li>2019-aujourd'hui : tronc commun, Université de Technologie de Troyes (UTT)</li>
+            </ul>
+
+            <h3 id="2.2">Modules UTT</h3>
+            <ol>
+                <li class="cs">CM03</li>
+                <li class="cs">PC12</li>
+                <li class="tm">LO07</li>
+                <li class="tm">GL01</li>
+                <li>LG02</li>
+                <li>PO03</li>
+            </ol>
+        </section>
+        <hr>
+
+        <!-- Entreprises -->
+        <section class="presentation">
+            <h2 id="3">Entreprises</h2>
+            <ul>
+                <li>
+                    <a href="https://www.alstom.com/fr">Alstom</a> :
+                    <a href="https://www.alstom.com/fr">
+                        <img src="images/alstom_logo.png" alt="logo d'Alstom" height="50">
+                    </a>
+                    <a href="https://www.google.com/maps/dir/?api=1&origin=91 avenues des Lombards Troyes &destination=Alstom Saint Ouen">
+                        <img src="images/map_logo.png" alt="une image de carte" height="50">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.axa.fr/"> AXA</a> :
+                    <a href="https://www.axa.fr/">
+                        <img src="images/axa_logo.png" alt="logo d'AXA" height="50">
+                    </a>
+                    <iframe width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/SYNDNsARcqQ" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </li>
+                <li>
+                    <a href="https://www.danone.fr">Danone</a> :
+                    <a href="https://www.danone.fr">
+                        <img src="images/danone_logo.jpg" alt="logo de Danone" height="50">
+                    </a>
+                </li>
+            </ul>
+            <img src="images/logo_ut.png" alt="logo de Danone" width="600" height="406" usemap="#ut_logos">
+            <map name="ut_logos">
+                <area shape="rect" coords="0, 0, 200, 260" href="https://www.utbm.fr" alt="lien vers l'UTBM">
+                <area shape="rect" coords="200, 0, 400, 260" href="https://www.utc.fr" alt="lien vers l'UTC">
+                <area shape="rect" coords="600, 0, 400, 260" href="https://www.utt.fr" alt="lien vers l'UTT">
+            </map>
+        </section>
+        <hr>
+
+        <!-- Tableau des compétences -->
+        <h2 id="4">Compétences</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Compétences</td>
+                    <td>Débutant</td>
+                    <td>Apprenti</td>
+                    <td>Confirmé</td>
+                    <td>Expert</td>
+                </tr>
+            </thead>
+            <tr>
+                <td class="language-name">JavaScript</td>
+                <td class="answer-box">x</td>
+                <td class="answer-box"></td>
+                <td class="answer-box"></td>
+                <td class="answer-box"></td>
+            </tr>
+            <tr>
+                <td class="language-name">HTML</td>
+                <td class="answer-box"></td>
+                <td class="answer-box">x</td>
+                <td class="answer-box"></td>
+                <td class="answer-box"></td>
+            </tr>
+            <tr>
+                <td class="language-name">CSS</td>
+                <td class="answer-box"></td>
+                <td class="answer-box">x</td>
+                <td class="answer-box"></td>
+                <td class="answer-box"></td>
+            </tr>
+            <tr>
+                <td class="language-name">PHP</td>
+                <td class="answer-box">x</td>
+                <td class="answer-box"></td>
+                <td class="answer-box"></td>
+                <td class="answer-box"></td>
+            </tr>
+            <tr>
+                <td class="language-name">Python</td>
+                <td class="answer-box"></td>
+                <td class="answer-box"></td>
+                <td class="answer-box">x</td>
+                <td class="answer-box"></td>
+            </tr>
+            <tr>
+                <td class="language-name">C</td>
+                <td class="answer-box"></td>
+                <td class="answer-box"></td>
+                <td class="answer-box">x</td>
+                <td class="answer-box"></td>
+            </tr>
+            <tr>
+                <td class="language-name">C++</td>
+                <td class="answer-box"></td>
+                <td class="answer-box"></td>
+                <td class="answer-box">x</td>
+                <td class="answer-box"></td>
+            </tr>
+
+
+        </table>
+        <hr>
+    </main>
+</body>
+</html>

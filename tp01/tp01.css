@@ -1,0 +1,82 @@
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, "Times New Roman", serif;
+}
+
+h1 {
+    color: navy;
+    alignment: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: red;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:hover {
+    background-color: greenyellow;
+}
+
+ol {
+    color: chocolate;
+}
+
+li.cs {
+    color: crimson;
+}
+
+li.tm {
+    color: blueviolet;
+}
+
+li {
+    color: cornflowerblue;
+}
+
+.title {
+
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    background-color: aqua;
+}
+
+
+#nom {
+    text-decoration: underline;
+}
+
+ol li {
+    list-style: lower-greek;
+}
+
+.gras {
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+#matiere {
+    background-color: salmon;
+    display: none;
+}
+
+
+table {
+    border-collapse: collapse;
+    //background-color: sandybrown;
+    width: 75%;
+    text-align: center;
+}
+
+table td {
+    border: 1px solid black;
+}
+
+table td .answer-box {
+}
