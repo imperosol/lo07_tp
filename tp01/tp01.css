@@ -1,5 +1,7 @@
 
 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: Arial, "Times New Roman", serif;
 }
@@ -46,6 +48,10 @@ li.tm {
 
 li {
     color: cornflowerblue;
+}
+
+iframe {
+    border-width: 0;
 }
 
 .title {
