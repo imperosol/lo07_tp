@@ -64,7 +64,6 @@ iframe {
 }
 
 .title {
-
     margin: auto;
     width: 80%;
     text-align: center;
@@ -88,8 +87,8 @@ ol li {
 }
 
 .index {
-    background-color: salmon;
-    display: none;
+    background-color: #6610f2;
+    /*display: none;*/
 }
 
 

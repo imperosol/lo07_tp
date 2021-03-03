@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -11,7 +12,7 @@
 <body>
 <!-- Exercice 2 -->
 <div class="container">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expand">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">Module LO07</a>
         </div>
@@ -203,41 +204,57 @@
         </div>
         <table class="table table-bordered">
             <thead>
-                <tr>
-                    <th>#</th>
-                    <th>ATN</th>
-                    <th>IPL</th>
-                    <th>VDC</th>
-                </tr>
+            <tr>
+                <th>#</th>
+                <th>ATN</th>
+                <th>IPL</th>
+                <th>VDC</th>
+            </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td rowspan="2">CS</td>>
-                    <td>IF09</td>
-                    <td>IF05</td>
-                    <td>IF17</td>
-                </tr>
-                <tr>
-                    <td>IF22</td>
-                    <td>IF10</td>
-                    <td>IF29</td>
-                </tr>
-                <tr>
-                    <td rowspan="3">TM</td>>
-                    <td>IF20</td>
-                    <td>IF26</td>
-                    <td>IF28</td>
-                </tr>
-                <tr>
-                    <td>IF34</td>
-                    <td>IF31</td>
-                    <td>IF34</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>LO10</td>
-                    <td></td>
-                </tr>
+            <tr>
+                <td>CS</td>
+                <td>
+                    <ul class="list-group">
+                        <li class="list-group-item">IF09</li>
+                        <li class="list-group-item">IF22</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="list-group">
+                        <li class="list-group-item">IF05</li>
+                        <li class="list-group-item">IF10</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="list-group">
+                        <li class="list-group-item">IF17</li>
+                        <li class="list-group-item">IF29</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>TM</td>
+                <td>
+                    <ul class="list-group">
+                        <li class="list-group-item">IF20</li>
+                        <li class="list-group-item">IF34</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="list-group">
+                        <li class="list-group-item">IF26</li>
+                        <li class="list-group-item">IF31</li>
+                        <li class="list-group-item">LO10</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="list-group">
+                        <li class="list-group-item">IF28</li>
+                        <li class="list-group-item">IF34</li>
+                    </ul>
+                </td>
+            </tr>
             </tbody>
         </table>
 
@@ -283,8 +300,8 @@
             </div>
             <div class="form-group">
                 <label for="from-ut">Origine des étudiants :</label>
-                <select id="from-ut" class="form-control">
-                    <option value="tc-utt">TC de l'UTC</option>
+                <select id="from-ut" class="form-control" style="height: 30px">
+                    <option value="tc-utt">TC de l'UTT</option>
                     <option value="dut-info">DUT info</option>
                     <option value="dut-ge2i">DUT GE2I</option>
                     <option value="dut-stid">DUT STID</option>
@@ -299,10 +316,10 @@
                     <label><input type="checkbox" name="gender" value="f"> ST07</label>
                 </div>
                 <div class="checkbox">
-                    <label><input type="checkbox" name="gender" value="f"> Féminin</label>
+                    <label><input type="checkbox" name="gender" value="f"> ST09</label>
                 </div>
                 <div class="checkbox">
-                    <label><input type="checkbox" name="gender" value="f"> Féminin</label>
+                    <label><input type="checkbox" name="gender" value="f"> ST10</label>
                 </div>
             </div>
             <div class="form-group">
