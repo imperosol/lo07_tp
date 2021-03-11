@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -29,7 +28,6 @@
     <main>
 
         <!-- Exercice 3 -->
-
         <div class="panel panel-success">
             <div class="panel-heading">
                 <h3 class="panel-title">Utilisation d'un Jumbotron (cet élément est un panel-success)</h3>
@@ -100,7 +98,7 @@
         </div>
 
         <p><strong>Grille de 3 colonnes</strong></p>
-        <div class="container">
+        <div class="container bootstrap-grid">
             <div class="row">
                 <div class="col-sm-4">Col 1</div>
                 <div class="col-sm-4">Col 2</div>
@@ -110,7 +108,7 @@
         <br>
 
         <p><strong>Grille de 2 et 3 colonnes</strong></p>
-        <div class="container">
+        <div class="container bootstrap-grid">
             <div class="row">
                 <div class="col-sm-4">1 of 2</div>
                 <div class="col-sm-8">2 of 2</div>
@@ -124,7 +122,7 @@
         <br>
 
         <p><strong>Grille de l'exercice 4 du TP Web 2</strong></p>
-        <div class="container">
+        <div class="container bootstrap-grid">
             <div class="row">
                 <div class="col-sm-5"></div>
                 <div class="col-sm-7">Boite 1</div>
@@ -156,7 +154,7 @@
             <div class="col-sm-4">
                 <div class="card">
                     <img class="card-img-top" src="img/card_1.jpg"
-                         alt="Yukari &quot;Guderian&quot; Akiyama" style="height: 200px">
+                         alt="Yukari &quot;Guderian&quot; Akiyama" style="max-height: 200px">
                     <div class="card-body">
                         <h4 class="card-title">ATN</h4>
                         <p class="card-text">Accompagnement de la Transformation Numérique : permet de comprendre
@@ -168,7 +166,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="card">
-                    <img class="card-img-top" src="img/card_2.jpg" alt="Haachama notlikethis" style="height: 200px">
+                    <img class="card-img-top" src="img/card_2.jpg" alt="Haachama notlikethis" style="max-height: 200px">
                     <div class="card-body">
                         <h4 class="card-title">IPL</h4>
                         <p class="card-text">Innovation par le logiciel : forme à la conception et à la mise en
@@ -179,7 +177,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="card">
-                    <img class="card-img-top" src="img/card_3.png" alt="Smirk Mayne" style="height: 200px">
+                    <img class="card-img-top" src="img/card_3.png" alt="Smirk Mayne" style="max-height: 200px">
                     <div class="card-body">
                         <h4 class="card-title">VDC</h4>
                         <p class="card-text">Valorisation des données et des connaissances : développe les compétences
@@ -189,6 +187,7 @@
                 </div>
             </div>
         </div>
+        <br>
 
         <!-- Exercice 6 -->
 
@@ -285,10 +284,11 @@
             </div>
             <div class="form-group">
                 <label for="birth-date">Birth date</label>
-                <input type="date" class="form-control" id="birth-date" value="Write your birth date here">
+                <input type="date" class="form-control" id="birth-date"
+                       min="1900-01-01" max="2020-03-11">
             </div>
             <div class="form-group">
-                <label for="gender-radio" class="control-label">Sexe :</label>
+                <label class="control-label">Sexe :</label>
                 <div class="radio inline" id="gender-radio">
                     <label>
                         <input type="radio" name="gender" value="m"> Masculin
@@ -311,15 +311,15 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="validation" class="control-label">Validation :</label>
-                <div class="checkbox" id="validation">
-                    <label><input type="checkbox" name="gender" value="f"> ST07</label>
+                <label class="control-label">Validation :</label>
+                <div class="checkbox" id="st07">
+                    <label><input type="checkbox" name="internship" value="st07"> ST07</label>
                 </div>
-                <div class="checkbox">
-                    <label><input type="checkbox" name="gender" value="f"> ST09</label>
+                <div class="checkbox" id="st09">
+                    <label><input type="checkbox" name="internship" value="st09"> ST09</label>
                 </div>
-                <div class="checkbox">
-                    <label><input type="checkbox" name="gender" value="f"> ST10</label>
+                <div class="checkbox disabled" id="st10">
+                    <label><input type="checkbox" name="internship" value="st10">ST10 (désactivé)</label>
                 </div>
             </div>
             <div class="form-group">
