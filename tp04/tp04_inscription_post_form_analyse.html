@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Exercice 2 -->
+<div class="container">
+    <main>
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                Utilisation des formulaire
+            </div>
+            <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolorem dolorum eveniet inventore itaque
+                magnam nobis porro possimus provident velit! Architecto dignissimos doloribus eaque est impedit ipsam
+                modi, nesciunt numquam!
+            </div>
+        </div>
+        <form method="post" action="tp04_inscription_post_action.php">
+            <div class="form-group">
+                <label for="username">Name :</label>
+                <input type="text" class="form-control" name="name" id="username"
+                       placeholder="Write your name here" value="Foo">
+            </div>
+            <div class="form-group">
+                <label for="surname">Surname :</label>
+                <input type="text" class="form-control" name="surname" id="surname"
+                       placeholder="Write your surname here" value="Bar">
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" class="form-control" name="email" id="email"
+                       placeholder="Write your email here" value="foo.bar@utt.fr">
+            </div>
+            <div class="form-group">
+                <label for="birth-date">Birth date</label>
+                <input type="date" class="form-control" name="birth-date" id="birth-date"
+                       min="1900-01-01" max="2020-03-11" value="2000-01-01">
+            </div>
+            <div class="form-group">
+                <label class="control-label">Sexe :</label>
+                <div class="radio inline" id="gender-radio">
+                    <label>
+                        <input type="radio" name="gender" value="M" checked="checked"> Masculin
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="F"> Féminin
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="from-ut">Origine des étudiants :</label>
+                <select id="from-ut" name="from" class="form-control" style="height: 30px">
+                    <option value="TC UTT">TC de l'UTT</option>
+                    <option value="DUT info">DUT info</option>
+                    <option value="DUT GE2I">DUT GE2I</option>
+                    <option value="DUT STID">DUT STID</option>
+                    <option value="DUT autre">DUT autre</option>
+                    <option value="Prépa scientifique">Prépa scientifique</option>
+                    <option value="Prépa B/L">Prépa B/L</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Validation :</label>
+                <div class="checkbox" id="st07">
+                    <label><input type="checkbox" name="st07" checked="checked"> ST07</label>
+                </div>
+                <div class="checkbox" id="st09">
+                    <label><input type="checkbox" name="st09" checked="checked"> ST09</label>
+                </div>
+                <div class="checkbox" id="st10">
+                    <label><input type="checkbox" name="st10">ST10</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="modules" class="control-label">Modules :</label>
+                <select class="form-control" id="modules" name="modules[]" multiple="multiple">
+                    <optgroup label="CS">
+                        <option value="gl02">GL02</option>
+                        <option value="nf16">NF16</option>
+                        <option value="nf20">NF20</option>
+                    </optgroup>
+                    <optgroup label="TM">
+                        <option value="if09">IF09</option>
+                        <option value="if14">IF14</option>
+                        <option value="lo02">LO02</option>
+                        <option value="nf21">NF21</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="complement">Informations complémentaires</label>
+                <textarea class="form-control" rows="5" id="complement"
+                          name="complement"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </main>
+</div>
+</body>
+</html>
