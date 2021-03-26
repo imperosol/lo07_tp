@@ -96,15 +96,25 @@ function print_modules() {
         </thead>
         <tbody>
         <tr>
-            <td>Que se passe-t-il si un élément du formulaire n'est pas rempli par le visiteur ?</td>
-            <td>L'élément est indéfini et <cite>Notice: Undefined index</cite> est affiché à la place</td>
+            <td>
+                Quel est l'impact de l'utilisation de la méthode GET ou POST sur l'URL ?
+            </td>
+            <td>
+                Contrairement à $_GET, $_POST ne modifie pas l'URL
+            </td>
         </tr>
         <tr>
             <td>
-
+                Quand faut-il utiliser la méthode POST ? Plusieurs réponses possibles.
             </td>
             <td>
-
+                $_POST est préférable lorsque :
+                <ul>
+                    <li>On veut transmettre un grand volume de données</li>
+                    <li>Les données doivent être sécurisées (on ne va pas faire passer un numéro
+                    de carte bancaire dans l'URL)</li>
+                    <li>Les données n'ont pas besoin d'être transmises via l'URL</li>
+                </ul>
             </td>
         </tr>
         </tbody>

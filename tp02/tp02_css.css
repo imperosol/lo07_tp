@@ -1,12 +1,16 @@
-
-
-.container {
-    width: 90%;
-}
 .container:not(.bootstrap-grid) {
     margin-top: 80px;
     padding-top: 40px;
     background-color: lemonchiffon;
+}
+tbody tr:nth-child(odd) {
+    background: white;
+}
+tbody tr:nth-child(even) {
+    background: lemonchiffon;
+}
+.panel tbody tr:nth-child(even) {
+    background:mintcream;
 }
 
 /* Pour pouvoir réaliser la mise en forme des cards, j'ai copié uniquement

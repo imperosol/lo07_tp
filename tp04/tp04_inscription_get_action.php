@@ -101,18 +101,18 @@ function print_modules() {
         </tr>
         <tr>
             <td>
-
+                Que doit-on préciser pour récupérer plusieurs valeurs pour le même attribut name ?
             </td>
             <td>
-
+                Il faut préciser que la donnée à récupérer est un tableau, en ajoutant [] derrière le nom
             </td>
         </tr>
         <tr>
             <td>
-
+                Comment récupère-t-on l’ensemble des valeurs dans le script PHP ?
             </td>
             <td>
-
+                Avec la variable superglobale $_GET qui est un tableau contenant tous les éléments du formulaire
             </td>
         </tr>
         <tr>
