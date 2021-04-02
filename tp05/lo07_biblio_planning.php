@@ -21,7 +21,9 @@ function listeSeance(): array
     $arr = [];
     for ($i = 8; $i < 18; ++$i) {
         for ($j = 0; $j < 5; $j += 2) {
-            array_push($arr, strval($i) . 'h' . strval($j) . '0');
+            if ($i != 12 and $i != 13) {
+                array_push($arr, sprintf("%02d",$i) . 'h' . strval($j) . '0');
+            }
         }
     }
     return $arr;

@@ -125,7 +125,7 @@ $capitalesEurope = array('France' => 'Paris', 'Italie' => 'Rome', 'Belgique' => 
             echo 'Capitale de l\'Allemagne : ' . $capitalesEurope['Allemagne'];
             ?>
             <?php
-            $capitalesEurope += ['France' => 'Troyes'];
+            $capitalesEurope += ["France" => "Troyes"];
             // La nouvelle valeur n'est pas ajoutée au tableau, parce que la clef existe déjà
             ?>
             <h2>Affichage du tableau</h2>

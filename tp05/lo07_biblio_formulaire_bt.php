@@ -44,6 +44,10 @@ function form_input_text($label, $type, $name, $size, $value) {
 // Parametre $liste    : un liste d'options. Vous utiliserez un foreach pour générer les balises option
 
 function form_select($label, $name, $multiple, $size, $liste) {
+    /* Transform the name to make it correspond to an array if needed */
+    if ($multiple != "" and strpos($name, "[]") == false) {
+        $name .= "[]";
+    }
     echo '    <div class="form-group"
         <label for="modules" class="control-label">'.$label.'</label>'.'
         <select class="form-control" id="modules" name='.$name;
