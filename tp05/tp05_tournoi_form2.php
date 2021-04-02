@@ -27,7 +27,7 @@ include "lo07_biblio_formulaire_bt.php";
                         <?php
                         form_input_text("Nom du joueur " . $j, "text", "name" . $j, "", "");
                         form_input_text("Prénom du joueur " . $j, "text", "surname" . $j, "", "");
-                        form_input_text("Email du joueur " . $j, "email", "surname" . $j, "", "");
+                        form_input_text("Email du joueur " . $j, "email", "email" . $j, "", "");
                         ?>
                     </div>
                 <div class="col-md-1"></div>
