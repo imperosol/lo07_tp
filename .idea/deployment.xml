@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="DEV ISI" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="DEV ISI">
+        <serverdata>
+          <mappings>
+            <mapping deploy="\" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/ch_utt" />
+            <excludedPath local="true" path="$PROJECT_DIR$/tp01" />
+            <excludedPath local="true" path="$PROJECT_DIR$/tp03" />
+            <excludedPath local="true" path="$PROJECT_DIR$/tp04" />
+            <excludedPath local="true" path="$PROJECT_DIR$/tp05" />
+            <excludedPath local="true" path="$PROJECT_DIR$/tp06" />
+            <excludedPath local="true" path="$PROJECT_DIR$/tp02" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

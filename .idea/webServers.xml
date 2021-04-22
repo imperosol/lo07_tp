@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="339ecf10-323f-4f88-864e-4fac49680fbc" name="DEV ISI" url="http://dev-isi.utt.fr/~girodtho">
+        <fileTransfer rootFolder="/home/etu/girodtho/www/lo07_tp" accessType="SFTP" host="dev-isi.utt.fr" port="22" sshConfigId="c3a4c964-bdeb-4a92-850b-78f26379f70d" sshConfig="girodtho@dev-isi.utt.fr:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
