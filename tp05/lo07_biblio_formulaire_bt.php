@@ -3,7 +3,8 @@
 // 20/03/2019 : bibliotheque fonctions formulaire avec bootstrap
 // Marc LEMERCIER
 
-function indent($nbrOfIndent) {
+function indent($nbrOfIndent)
+{
     echo str_repeat('    ', ($nbrOfIndent));
 }
 
@@ -12,24 +13,26 @@ function indent($nbrOfIndent) {
 // form_begin
 // =========================
 
-function form_begin($class, $method, $action) {
-    echo ("\n<!-- ============================================== -->\n");
-    echo ("<!-- form_begin : $class $method $action) -->\n");
-    printf("<form class='%s' method='%s' action='%s'>\n", $class, $method, $action);
+function form_begin($class, $method, $action)
+{
+    echo("\n<!-- ============================================== -->\n");
+    echo("<!-- form_begin : $class $method $action) -->\n");
+    echo "<form class=$class method='$method' action=$action>\n";
 }
 
 // =========================
 // form_input_text
 // =========================
 
-function form_input_text($label, $type, $name, $size, $value) {
-    echo ("\n<!-- form_input_text : $label $name $size $value -->\n");
+function form_input_text($label, $type, $name, $size, $value)
+{
+    echo("\n<!-- form_input_text : $label $name $size $value -->\n");
 //    echo ("  <p>\n");
 
-    echo ("<div class='form-group'>");
-    echo (" <label for='$label'>$label</label>");
-    echo (" <input type='$type' class='form-control' name='$name' size='$size' value='$value' >");
-    echo ("</div>");
+    echo("<div class='form-group'>");
+    echo(" <label for='$label'>$label</label>");
+    echo(" <input type='$type' class='form-control' name='$name' size='$size' value='$value' >");
+    echo("</div>");
 }
 
 
@@ -43,18 +46,19 @@ function form_input_text($label, $type, $name, $size, $value) {
 // Parametre $size     : attribut size de la balise select
 // Parametre $liste    : un liste d'options. Vous utiliserez un foreach pour générer les balises option
 
-function form_select($label, $name, $multiple, $size, $liste) {
+function form_select($label, $name, $multiple, $size, $liste)
+{
     /* Transform the name to make it correspond to an array if needed */
     if ($multiple != "" and strpos($name, "[]") == false) {
         $name .= "[]";
     }
     echo '    <div class="form-group"
-        <label for="modules" class="control-label">'.$label.'</label>'.'
-        <select class="form-control" id="modules" name='.$name;
-    echo $multiple?' multiple="multiple"':''.'>'."\n";
+        <label for="modules" class="control-label">' . $label . '</label>' . '
+        <select class="form-control" id="modules" name=' . $name;
+    echo $multiple ? ' multiple="multiple"' : '' . '>' . "\n";
     foreach ($liste as $value) {
         indent(3);
-        echo '<option value="'.$value.'">'.$value.'</option>';
+        echo '<option value="' . $value . '">' . $value . '</option>';
         echo "\n";
     }
     indent(2);
@@ -66,7 +70,8 @@ function form_select($label, $name, $multiple, $size, $liste) {
 
 // =========================
 
-function form_input_reset($value) {
+function form_input_reset($value)
+{
     indent(1);
     echo '<input type="reset" class="btn btn-primary" value="' . $value . '">';
     echo "\n";
@@ -74,7 +79,8 @@ function form_input_reset($value) {
 
 // =========================
 
-function form_input_submit($value) {
+function form_input_submit($value)
+{
     indent(1);
     echo '<input type="submit" class="btn btn-primary" value="' . $value . '">';
     echo "\n";
@@ -83,7 +89,8 @@ function form_input_submit($value) {
 // =========================
 
 
-function form_end() {
+function form_end()
+{
     echo "</form>";
     echo "\n";
 }
