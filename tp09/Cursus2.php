@@ -25,7 +25,6 @@ class Cursus2 extends Cursus
     {
         $this->listeModules[$module->getSigle()] = $module;
         $_SESSION["SESSION_cursus"][$module->getSigle()] = $module;
-
     }
 
 }
