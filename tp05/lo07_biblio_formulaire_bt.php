@@ -26,6 +26,10 @@ function form_begin($class, $method, $action)
 
 function form_input_text($label, $type, $name, $size, $value)
 {
+    /* Type among :
+     *     text
+     *     password
+     * */
     echo("\n<!-- form_input_text : $label $name $size $value -->\n");
 //    echo ("  <p>\n");
 
