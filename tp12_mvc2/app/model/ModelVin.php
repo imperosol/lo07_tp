@@ -155,10 +155,21 @@ class ModelVin
         return null;
     }
 
-    public static function delete()
+    public static function delete($id)
     {
-        echo("ModelVin : delete() TODO ....");
-        return null;
+        try {
+            $database = Model::getInstance();
+
+            $query = "DELETE FROM vin WHERE id = :id";
+            $statement = $database->prepare($query);
+            $statement->execute([
+                    'id' => $id
+            ]);
+            return $id;
+        } catch (PDOException $e) {
+            printf("%s - %s<p/>\n", $e->getCode(), $e->getMessage());
+            return -1;
+        }
     }
 
 }
