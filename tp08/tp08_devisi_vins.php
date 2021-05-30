@@ -154,7 +154,7 @@ $option = array(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $result->execute(['an' => 1980, 'deg' => 10.0]);
         ?>
         <div class="panel-body">
-            <?php display_query_result($result);?>
+            <?php display_query_result($result); ?>
         </div>
     </div>
     <div class="panel panel-info">

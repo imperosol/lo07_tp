@@ -10,18 +10,22 @@ class ControllerProducteur
         // ----- Construction chemin de la vue
         include 'config.php';
         $vue = $root . '/app/view/producteur/viewAll.php';
-        if (DEBUG)
+        if (DEBUG) {
             echo("ControllerProducteur : viewAll : vue = $vue");
+        }
         require($vue);
     }
 
     // Affiche un formulaire pour sélectionner un id qui existe
-    public static function producteurReadId()
+    public static function producteurReadId($args)
     {
         $results = ModelProducteur::getAllId();
-
-        // ----- Construction chemin de la vue
+        $target = $args['target'];
         include 'config.php';
+        if (DEBUG) {
+            echo 'ControlerProducteur : Read id';
+            echo 'target = ' . $target;
+        }
         $vue = $root . '/app/view/producteur/viewId.php';
         require($vue);
     }
@@ -77,5 +81,16 @@ class ControllerProducteur
         include 'config.php';
         $vue = $root . '/app/view/producteur/viewNumberByRegion.php';
         require($vue);
+    }
+
+    public static function producteurDeleted()
+    {
+        // Supprime la valeur
+        $results = ModelProducteur::delete($_GET['id']);
+        // ----- Construction chemin de la vue
+        include 'config.php';
+        $vue = $root . '/app/view/producteur/viewDeleted.php';
+        require($vue);
+
     }
 }

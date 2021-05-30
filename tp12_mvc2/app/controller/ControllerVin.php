@@ -71,6 +71,12 @@ class ControllerVin
 
     public static function vinDeleted()
     {
+        // Supprime la valeur
+        $results = ModelVin::delete($_GET['id']);
+        // ----- Construction chemin de la vue
+        include 'config.php';
+        $vue = $root . '/app/view/vin/viewDeleted.php';
+        require($vue);
 
     }
 

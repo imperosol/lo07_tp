@@ -1,4 +1,4 @@
-<!-- ----- debut Router1 -->
+<!-- ----- debut Router2 -->
 <?php
 require('../controller/ControllerVin.php');
 require('../controller/ControllerProducteur.php');
@@ -19,11 +19,12 @@ $args = $param;
 
 // --- Liste des méthodes autorisées
 switch ($action) {
-    case "vinReadAll" :
-    case "vinReadOne" :
-    case "vinReadId" :
-    case "vinCreate" :
-    case "vinCreated" :
+    case "vinReadAll":
+    case "vinReadOne":
+    case "vinReadId":
+    case "vinCreate":
+    case "vinCreated":
+    case "vinDeleted":
         ControllerVin::$action($args);
         break;
     case "producteurReadAll":
@@ -33,6 +34,7 @@ switch ($action) {
     case "producteurCreated":
     case "listDistinctRegion":
     case "numberByRegion":
+    case "producteurDeleted":
         ControllerProducteur::$action($args);
         break;
 
@@ -40,11 +42,11 @@ switch ($action) {
         ControllerCave::$action($args);
         break;
 
-        // Tache par défaut
+    // Tache par défaut
     default:
         $action = "caveAccueil";
         ControllerCave::$action($args);
 }
 ?>
-<!-- ----- Fin Router1 -->
+<!-- ----- Fin router2 -->
 
